@@ -11,9 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import kr.or.seereal.dto.TestCaseVO;
-import kr.or.seereal.dto.TestFactorVO;
-import kr.or.seereal.function.codingtest.controller.CoteGradeCommand;
 
 public class RunCode {
 
@@ -84,8 +81,6 @@ public class RunCode {
 	// 사용자가 작성했던 코드를 바탕으로 .java 파일 작성
 	public void getCodeToFile(String userExp, TestCaseVO testcase) {
 		
-		//System.out.println(". 기존 코드 : \n" + userExp);
-		
 		// 패키지 추가
 		userExp = userExp.replace("public class", "package process;\npublic class");
 		
@@ -126,7 +121,8 @@ public class RunCode {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+	}
+	
 	// 컴파일 명령어
 	public String compileMethod() {
 		buffer = new StringBuffer();
