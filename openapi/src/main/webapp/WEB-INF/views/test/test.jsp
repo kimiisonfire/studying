@@ -6,7 +6,6 @@
     <script src="<%=request.getContextPath() %>/resources/jquery.min.js" ></script>
 </head>
 
-<h1>푸라닭 가만안둬</h1>
 <div id="tablediv" style="witdh:500px;height:500px;background-color:#f5f5f5;">
 	
 </div>
